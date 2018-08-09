@@ -5,5 +5,8 @@
 - 面试题2 实现Singleton模式
 ## 数据结构
 ### 数组
+
 - 面试题3 找出数组中重复的数字
+    - [可以改变数组](\src\Question3\Question3.Question3_1)
+    
 ### 字符串
