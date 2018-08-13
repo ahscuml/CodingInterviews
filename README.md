@@ -10,3 +10,9 @@
     - [可以改变数组](/src/Question3/Question3_1.java)
     - [不可改变数组](/src/Question3/Question3_2.java)
 ### 字符串
+- 面试题5 替换空格  
+[String, StringBuffer,StringBuilder的区别](https://www.nowcoder.com/questionTerminal/abbd386334344d9c8df4a0ac918d3e0f?toCommentId=374798)
+    - [替换空格](/src/Question5/Question5.java)
+ ## 链表
+- 面试题6 从头到尾打印链表
+    - [从头到尾打印链表](/src/Question6/Question6.java)    
