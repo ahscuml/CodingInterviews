@@ -1,5 +1,3 @@
-package Question1;
-
 /**
  * 赋值运算符函数
  * @author ahscuml

@@ -1,5 +1,3 @@
-package Question6;
-
 import java.util.ArrayList;
 import java.util.Stack;
 

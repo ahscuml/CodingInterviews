@@ -1,5 +1,3 @@
-package Question2;
-
 /**
  * 实现Singleton模式
  * @author ahscuml
