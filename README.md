@@ -27,7 +27,9 @@
 ### 递归和循环
 - 面试题10 斐波那契数列
     - [斐波那契数列](/src/Question10_Fib.java)
-    - [青蛙跳台阶](/src/Question10_Frog.java)
+    - [青蛙跳台阶](/src/Question10_JumpFloor.java)
+    - [变态青蛙跳台阶](/src/Question10_JumpFloorII)
+    - [矩形覆盖](/src/Question10_RectCover)
 ### 查找和排序
 - 面试题11 [旋转数组的最小数字](/src/Question11.java)
 ### 回溯法
