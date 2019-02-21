@@ -89,6 +89,7 @@ public class Question3_2 {
      * 测试代码
      */
     public static void main(String[] args) {
+        // 总共三组测试数据
         int[] numberswrong = {1, 2, 3, 4, 5, 6, 7, 8};
         int[] numberswrong1 = {};
         int numberswrong1_length = numberswrong1.length;
@@ -101,7 +102,33 @@ public class Question3_2 {
         System.out.println(findminspace(numbers, length));
         System.out.println(findminspace(numberswrong, length));
         System.out.println(findminspace(numberswrong1, numberswrong1_length));
+        System.out.println("---------------------------------------");
+        System.out.println(findDuplicate(numbers, length));
+        // System.out.println(findDuplicate(numberswrong, length));
+        System.out.println(findDuplicate(numberswrong1, numberswrong1_length));
 
+    }
 
+    /**
+     * 最优方法，空间复杂度O(1); 参考leetco第287题
+     * */
+    public static int findDuplicate(int[] nums, int length) {
+        if (nums.length > 1) {
+            int slow = nums[0];
+            int fast = nums[nums[0]];
+
+            while (slow != fast) {
+                slow = nums[slow];
+                fast = nums[nums[fast]];
+            }
+
+            fast = 0;
+            while (fast != slow) {
+                fast = nums[fast];
+                slow = nums[slow];
+            }
+            return slow;
+        }
+        return -1;
     }
 }
