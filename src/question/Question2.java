@@ -18,3 +18,32 @@ public class Question2 {
         return question2;
     }
 }
+
+/**
+ * 懒汉式
+ * */
+class singletonLazy {
+    private static volatile singletonLazy singletonLazy;
+    public singletonLazy getInstance(){
+        if (singletonLazy == null) {
+            synchronized (singletonLazy.getClass()) {
+                if (singletonLazy == null) {
+                    singletonLazy = new singletonLazy();
+                }
+            }
+        }
+        return singletonLazy;
+    }
+    private singletonLazy(){}
+}
+
+/**
+ * 饿汉式
+ * */
+class singletonHungry {
+    private static final singletonHungry SINGLETONHUNGRY = new singletonHungry();
+    private singletonHungry(){}
+    public singletonHungry getInstance() {
+        return SINGLETONHUNGRY;
+    }
+}
