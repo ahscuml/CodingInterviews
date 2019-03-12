@@ -1,7 +1,5 @@
 package question;
 
-import java.util.Arrays;
-
 /**
  * 旋转数组的最小数字
  * 把一个数组最开始的若干个元素搬到数组的末尾，我们称之为数组的旋转。 输入一个非减排序的数组的一个旋转，
@@ -12,17 +10,17 @@ import java.util.Arrays;
  * @date 2018/8/16
  * @time 11:18
  */
-public class Question11 {
+public class Q6minNumberInRotateArray {
     /**
      * 这道题相对来说比较简单，有三种不同的方法
      * 1. 方法一是简单地遍历数组，找到最小的，时间复杂度O(n)
      * 2. 方法二是利用旋转数组的特性，同样遍历数组，找到前一个比后一个大的元素，这样子不用遍历完全数组，时间复杂度也是O(n)
-     * 3. 方法三是利用旋转数组排序特性，结合二分查找来进行查找，时间复杂度O(logn)
+     * 3. 方法三是利用旋转数组排序特性，结合二分查找来进行查找，时间复杂度O(logn) 重点是要判断各种等号的情形
      */
     public static int minNumberInRotateArray(int[] array) {
         // 判断输入是否有误
-        if (array.length <= 0) {
-            return -1;
+        if (array.length == 0) {
+            return 0;
         }
         int left = 0, right = array.length - 1, middle = 0;
         while (array[left] >= array[right]) {
@@ -42,22 +40,5 @@ public class Question11 {
             }
         }
         return array[middle];
-    }
-
-    /**
-     * 测试代码
-     * 特殊情况，数组有序，数组为0，数组元素相同
-     */
-    public static void main(String[] args) {
-        int[] array = {1,1,1,1,1};
-        int[] array1 = {1,2,3,4,5};
-        int[] array2 = {0};
-        int[] array3 = {1};
-        int[] array4 = {6,8,9,11,45,2,4,5};
-        System.out.println("旋转数组：" + Arrays.toString(array) + " 最小值是 " + minNumberInRotateArray(array));
-        System.out.println("旋转数组：" + Arrays.toString(array1) + " 最小值是 " + minNumberInRotateArray(array1));
-        System.out.println("旋转数组：" + Arrays.toString(array2) + " 最小值是 " + minNumberInRotateArray(array2));
-        System.out.println("旋转数组：" + Arrays.toString(array3) + " 最小值是 " + minNumberInRotateArray(array3));
-        System.out.println("旋转数组：" + Arrays.toString(array4) + " 最小值是 " + minNumberInRotateArray(array4));
     }
 }

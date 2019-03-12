@@ -1,7 +1,5 @@
 package question;
 
-import java.util.Scanner;
-
 /**
  * 斐波那契数列
  * 大家都知道斐波那契数列，现在要求输入一个整数n，请你输出斐波那契数列的第n项（从0开始，第0项为0）。
@@ -11,7 +9,7 @@ import java.util.Scanner;
  * @date 2018/8/16
  * @time 10:36
  */
-public class Question10_Fib {
+public class Q7Fibonacci {
     /**
      * 递归的写法，简单易懂，但是计算重复，占用空间大
      */
@@ -38,20 +36,5 @@ public class Question10_Fib {
             n_2 = n_1 - n_2;
         }
         return n_2;
-    }
-
-    /**
-     * 同样的问题还有一种 O(logn)的解法，利用数组，不够实用，就不贴了
-     * */
-
-    /**
-     * 测试函数
-     */
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        System.out.print("请输入一个整数：");
-        int n = in.nextInt();
-        System.out.println("Fibonacci第 " + n + " 项是：" + fibonacci_Rec(n));
-        System.out.println("Fibonacci第 " + n + " 项是：" + fibonacci_Cyc(n));
     }
 }

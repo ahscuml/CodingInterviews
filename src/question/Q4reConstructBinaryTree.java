@@ -23,17 +23,6 @@ import util.TreeNode;
  * @time 12:10
  */
 public class Q4reConstructBinaryTree {
-    ///**
-    // * 测试代码
-    // * 普通二叉树测试代码，缺少其它测试用例
-    // */
-    //public static void main(String[] args) {
-    //    int[] pre = {1, 2, 4, 7, 3, 5, 6, 8};
-    //    int[] in = {4, 7, 2, 1, 5, 3, 8, 6};
-    //    TreeNode root = reConstructBinaryTree(pre, in);
-    //    printTree(root);
-    //}
-
     /**
      * @param pre 前序遍历
      * @param in  中序遍历

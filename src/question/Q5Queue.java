@@ -10,10 +10,11 @@ import java.util.Stack;
  * @date 2018/9/11
  * @time 11:02
  */
-public class Question9 {
+public class Q5Queue {
     Stack<Integer> stack1 = new Stack<Integer>();
     Stack<Integer> stack2 = new Stack<Integer>();
     // 用两个先进后出完成一个先进先出    大问题换成小问题解决
+
     /**
      * 进入队列
      */
@@ -34,15 +35,5 @@ public class Question9 {
             }
         }
         return stack2.pop();
-    }
-
-    /**
-     * 测试函数
-     * */
-    public static void main(String[] args) {
-        Question9 question9 = new Question9();
-        //question9.push(1);
-        //question9.push(2);
-        System.out.println(question9.pop());
     }
 }
