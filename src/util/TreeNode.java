@@ -1,17 +1,19 @@
 package util;
 
 /**
+ * TreeNode的定义
+ *
  * @author ahscuml
  * @date 2019/3/10
  * @time 1:01
  */
+
 public class TreeNode {
-
     public int val;
-    TreeNode left = null;
-    TreeNode right = null;
+    public TreeNode left;
+    public TreeNode right;
 
-    public TreeNode(int val) {
-        this.val = val;
+    public TreeNode(int x) {
+        val = x;
     }
 }

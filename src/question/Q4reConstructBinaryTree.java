@@ -1,35 +1,38 @@
 package question;
 
+import util.TreeNode;
+
 /**
  * 重建二叉树
  * 输入某二叉树的前序遍历和中序遍历的结果，请重建出该二叉树。假设输入的前序遍历和中序遍历的结果中都不含重复的数字。例如输入前序遍历序列{1,2,4,7,3,5,6,8}和中序遍历序列{4,7,2,1,5,3,8,
  * 6}，则重建二叉树并返回。
- *
+ * <p>
  * 遍历二叉树
  * 前序遍历：
  * 1.访问根节点
  * 2.前序遍历访问根节点的左子树
  * 3.前序遍历访问根节点的右子树
- *
+ * <p>
  * 中序遍历：
  * 1.中序遍历访问根节点的左子树
  * 2.访问中节点
  * 3.中序遍历访问根节点的右子树
+ *
  * @author ahscuml
  * @date 2018/8/13
  * @time 12:10
  */
-public class Question7 {
-    /**
-     * 测试代码
-     * 普通二叉树测试代码，缺少其它测试用例
-     */
-    public static void main(String[] args) {
-        int[] pre = {1, 2, 4, 7, 3, 5, 6, 8};
-        int[] in = {4, 7, 2, 1, 5, 3, 8, 6};
-        TreeNode root = reConstructBinaryTree(pre, in);
-        printTree(root);
-    }
+public class Q4reConstructBinaryTree {
+    ///**
+    // * 测试代码
+    // * 普通二叉树测试代码，缺少其它测试用例
+    // */
+    //public static void main(String[] args) {
+    //    int[] pre = {1, 2, 4, 7, 3, 5, 6, 8};
+    //    int[] in = {4, 7, 2, 1, 5, 3, 8, 6};
+    //    TreeNode root = reConstructBinaryTree(pre, in);
+    //    printTree(root);
+    //}
 
     /**
      * @param pre 前序遍历
@@ -41,6 +44,7 @@ public class Question7 {
     }
 
     /**
+     * 前序遍历可以知道根节点是什么，再通过中序遍历，可以知道左右子树是什么，再递归。
      * 方便迭代，所以采用私有方法，包括前序遍历和中序遍历下标
      */
     private static TreeNode reConstructBinaryTree(int[] pre, int preStart, int preEnd, int[] in, int inStart, int
@@ -63,29 +67,18 @@ public class Question7 {
         }
         return root;
     }
+
     /**
      * 打印二叉树
      * 通过前序遍历
-     * */
+     */
     public static void printTree(TreeNode root) {
         if (root != null) {
             System.out.print(root.val + " ");
             printTree(root.left);
             printTree(root.right);
         }
-
     }
 }
 
-/**
- * TreeNode的定义
- */
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
 
-    TreeNode(int x) {
-        val = x;
-    }
-}

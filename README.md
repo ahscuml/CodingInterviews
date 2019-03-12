@@ -18,7 +18,7 @@
 ### 链表
 - 面试题6 [从头到尾打印链表](/src/question/Question6.java) 
 ### 树
-- 面试题7 [重建二叉树](/src/question/Question7.java)
+- 面试题7 [重建二叉树](src/question/Q7reConstructBinaryTree.java)
 - 面试题8 [二叉树的下一个节点](/src/question/Question8.java)
 ### 栈和队列
 - 面试题9 [用两个栈实现队列](/src/question/Question9.java)
