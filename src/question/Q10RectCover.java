@@ -9,7 +9,7 @@ import java.util.Scanner;
  * @date 2018/8/16
  * @time 15:34
  */
-public class Question10_RectCover {
+public class Q10RectCover {
     /**
      * 类比青蛙跳台阶问题，一次竖着摆一个或者一次横着摆两个
      * */
