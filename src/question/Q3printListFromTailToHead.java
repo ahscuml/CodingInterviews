@@ -16,7 +16,7 @@ import java.util.Stack;
 
 
 
-public class Question6 {
+public class Q3printListFromTailToHead {
     /**
      * 链表考虑到递归调用
      * 递归调用的写法也很关键

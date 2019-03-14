@@ -7,7 +7,7 @@ package question;
  * @date 2018/8/16
  * @time 15:31
  */
-public class Question10_JumpFloorII {
+public class Q9JumpFloorII {
     /**
      * 归纳法，最终f(n) = 2^n-1
      * */

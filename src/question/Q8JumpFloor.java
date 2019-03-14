@@ -10,7 +10,7 @@ import java.util.Scanner;
  * @date 2018/8/16
  * @time 11:35
  */
-public class Question10_JumpFloor {
+public class Q8JumpFloor {
     /**
      * 这道题的思路是，青蛙到达最后一个台阶有两种选择，一步或者两步，在到达倒数第二个台阶也有两个选择，一步或者两步
      * 所以问题就变得很简单，动态规划的思想，递归的思路,自上而下循环的写法

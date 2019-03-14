@@ -8,7 +8,7 @@ package question;
  * @date 2018/8/12
  * @time 21:05
  */
-public class Question5 {
+public class Q2replaceSpace {
     /**
      * 替换空格函数   空格占一个字符，替换%20占3个字符，所以要移动字符串
      * 替换字符串有两个问题

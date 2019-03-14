@@ -9,7 +9,7 @@ package question;
  * @date 2018/8/13
  * @time 16:21
  */
-public class Question4 {
+public class Q1Find {
     /**
      * 测试用例
      */
