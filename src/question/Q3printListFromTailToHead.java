@@ -15,17 +15,17 @@ import java.util.Stack;
  */
 
 
-
 public class Q3printListFromTailToHead {
     /**
      * 链表考虑到递归调用
      * 递归调用的写法也很关键
      * 使用递归，空间开销会很大吧？？？？ 递归的讨论 存储的一些内容，看看虚拟机
+     * TODO 这个递归的方法还可以再研究研究
      */
     private static ArrayList<Integer> printListFromTailToHead(ListNode listNode) {
         ArrayList<Integer> arrayList = new ArrayList<Integer>();
-        ListNode pNode=listNode;
-        if (pNode != null){
+        ListNode pNode = listNode;
+        if (pNode != null) {
             if (pNode.next != null) {
                 arrayList = printListFromTailToHead(pNode.next);
             }
